@@ -1,0 +1,197 @@
+
+/* index styles */
+ #container
+        {
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; 
+            gap: 20px;
+        }
+        
+        #container div
+        {
+            background-color: rgb(0, 42, 78);
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            border-top-right-radius:25px;
+            border-top-left-radius:25px;
+            border-bottom-right-radius:25px;
+            border-bottom-left-radius:25px;
+
+        }
+
+        .portraits
+        {
+            border: 2px solid black;
+            object-fit: cover;
+            border-top-right-radius:25px;
+            border-top-left-radius:25px;
+            border-bottom-right-radius:25px;
+            border-bottom-left-radius:25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+
+        }
+
+        h5
+        {
+            text-align: center;
+            color: white;
+            text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px  1px 0 black,
+            1px  1px 0 black;
+        }
+
+/* about us styles */
+#array
+        {
+            background-color: orange;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .tableElement
+        {
+            background-color: rgb(255, 192, 76);
+            border: solid black;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+
+        }
+        
+        .commonHobbies
+        {
+            background-color: rgb(255, 192, 76);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        
+        .text
+        {
+            color: white;
+            text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px  1px 0 black,
+            1px  1px 0 black;
+        }
+
+/* contact us stymes */
+
+#flex-container 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: orange;
+}
+
+#google-form-wrapper
+{
+    border: solid black;
+    display: flex;
+    justify-content: center;
+    border-top-right-radius:25px;
+    border-top-left-radius:25px;
+    border-bottom-right-radius:25px;
+    border-bottom-left-radius:25px;
+    background-color: rgb(255, 192, 76);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* general use styles */
+.header 
+{
+    background-color: orange;
+    text-align: center;
+    margin: auto;
+}
+
+.header h1
+{
+    font-family: 'Roboto', cursive;
+    color: black;
+    text-shadow:
+            -1px -1px 0 white,
+            1px -1px 0 white,
+            -1px  1px 0 white,
+            1px  1px 0 white;
+}
+
+h2
+{
+    color: black;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px  1px 0 white,
+    1px  1px 0 white;
+}
+.mainPagetext
+{
+    background-color: rgb(255, 192, 76);
+    text-align: center;
+    color: white;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px  1px 0 black,
+    1px  1px 0 black;
+    size: 150%;
+}
+
+.navigation 
+{
+    background-color: rgb(255, 192, 76);
+    padding: 20px 0;
+}
+
+.nav-buttons 
+{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-buttons a 
+{
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+    padding: 12px 24px;
+    background-color: white;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    min-width: 120px;
+    text-align: center;
+}
+
+.nav-buttons a:hover 
+{
+    transform: scale(1.05);
+    background-color: #1D428A;
+    color: white;
+}
+
+.nav-buttons a.active 
+{
+    background-color: orange;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+footer
+{
+    background-color: orange;
+    font-family: 'Roboto', cursive;
+    font-size: 0.75vw;
+    text-align: center;
+    color: rgb(0, 42, 78);
+}
