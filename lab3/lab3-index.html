@@ -4,60 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab3 Quizz</title>
-    <script src="js/script.js" defer></script>
+    <link href="css/lab3-properties.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="js/lab3-script.js" defer></script>
     <script src="https://unpkg.com/underscore@1.13.7/underscore-umd-min.js"></script>
 
 </head>
 <body>
-    <h1>Geography Quizz</h1>
-    
-    <p id="q1title">1. What is the capital of France</p>
+    <div class="mainWindow">
+        <h1>Geography Quizz</h1>
+        
+        <div class="questionStyle">
+            <p id="q1Title">1. What is the capital of France</p>
+            <img id="q1Image" class="resultIcon" alt="Quiz Image">
+        </div>
+        
+        <div id="q1ChoicesDiv"></div>
+        
+        <div class="questionStyle">
+            <p id="q2Title">2. In which continent is Nigeria in? (lowercase)</p>
+            <img id="q2Image" class="resultIcon" alt="Quiz Image">
+        </div>
+        <input type="text" id="q2">
 
-    <div id="q1ChoicesDiv"></div>
-    
-    <br>
+        <div class="questionStyle">
+            <p id="q3Title">3. Where is CSUMB located?</p>
+            <img id="q3Image" class="resultIcon" alt="Quiz Image">
+        </div>
+        <select id="selectInput">
+            <option>Texas</option>
+            <option>Washington </option>
+            <option>California</option>
+            <option>Iowa</option>
+        </select>
 
-    <p id="q2title">2. In which continent is Nigeria in? (lowercase)</p>
-    <br>
+        <div class="questionStyle">
+            <p id="q4Title">4. How many states are in the USA?</p>
+            <img id="q4Image" class="resultIcon" alt="Quiz Image">
+        </div>
+        <input type="number" id="numberInput">
 
-    <input type="text" id="q2">
+        <div class="questionStyle">
+            <p id= "q5Title"> 5. Where is the Arctic? </p>
+            <img id="q5Image" class="resultIcon" alt="Quiz Image">
+        </div>
+        <input type="checkbox" id="checkWest" value="value"> West
+        <input type="checkbox" id="checkNorth" value="value"> North
+        <input type="checkbox" id="checkSouth" value="value"> South
+        <input type="checkbox" id="checkEast" value="value"> East
 
-    <br>
-    <br>
-    
-    <p id="q3title">3. Where is CSUMB located?</p>
-    <br>
+        <br>
+        <br>
+        <button id="submitQuizz">Submit Quizz</button>
+        <br>
 
-    <select id="selectInput"> 
-        <option>Texas</option>
-        <option>Washington </option>
-        <option>California</option>
-        <option>Iowa</option>
-    </select> 
+        <p id="scoreNumber">Score : 0</p>
+        <p id="congratulation"></p>
 
-    <br>
-    <br>
-
-    <p id="q4title">4. How many states are in the USA?</p>
-    <br>
-
-    <input type="number" id="numberInput">
-    <br>
-    <br>
-
-   <P id= "q5title"> 5. Where is the Arctic? </P>
-    <br>
-
-    <input type="checkbox" id="checkWest" value="value"> West
-    <input type="checkbox" id="checkNorth" value="value"> North
-    <input type="checkbox" id="checkSouth" value="value"> South
-    <input type="checkbox" id="checkEast" value="value"> East
-
-    <br>
-    <br>
-
-    <button> Submit quizz </button>
-
-    <p id="scoreNumber">Score : 0</p>
+        <div>
+            <p>Number of tries : <span id="textNumberTries">0</span></p>
+            <button id="resetTries">Reset Tries</button>
+        </div>
+    </div>
 </body>
 </html>
