@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Simple Hangman</title>
+  <link rel="stylesheet" href="css/hw2-properties.css">
 </head>
 <body>
-    
+  <div class="page">
+    <h1 id="title">Hangman</h1>
+    <div class="gameBox" id="gameBox">
+      <div class="topRow">
+        <div class="imageWrap" id="imageWrap"></div>
+        <div class="status">
+          <p id="message">Guess the word</p>
+          <p>Wrong guesses: <span id="wrongCount">0</span> / <span id="maxWrong">6</span></p>
+          <p id="lettersUsed">Letters used: <span id="lettersSpan"></span></p>
+        </div>
+      </div>
+      <div class="wordRow" id="wordRow"></div>
+      <div class="controls">
+        <input id="letterInput" type="text" maxlength="1" placeholder="Enter a letter" autocomplete="off">
+        <button id="guessBtn">Guess</button>
+        <button id="resetBtn">New Game</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/hw2-script.js" defer></script>
 </body>
 </html>

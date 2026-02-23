@@ -1,0 +1,121 @@
+:root {
+  --bg: #0f172a;
+  --card: rgba(255,255,255,0.06);
+  --accent: #60a5fa;
+  --text: #e6eef8;
+}
+* {box-sizing: border-box}
+html,body {height:100%}
+body {
+  margin:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, #071024 0%, #0b1220 100%);
+  color: var(--text);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+.page {
+  width: 760px;
+  max-width: 95%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 1px;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+.gameBox {
+  width: 100%;
+  background: var(--card);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: stretch;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+.topRow {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: space-between;
+}
+.imageWrap {
+  width: 200px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.06));
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+.imageWrap img {max-width:100%; max-height:100%; display:block}
+.status {flex:1; padding: 5px 10px}
+#message {margin: 0 0 6px 0; font-weight: 600}
+.wordRow {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.letterBox {
+  width: 44px;
+  height: 56px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.02);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border: 1px solid rgba(255,255,255,0.03);
+}
+.controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+#letterInput {
+  width: 140px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.02);
+  color: var(--text);
+  font-size: 16px;
+  outline: none;
+}
+button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: var(--accent);
+  color: #04233a;
+}
+button#resetBtn {background: rgba(255,255,255,0.06); color: var(--text)}
+.footer {
+  font-size: 12px;
+  opacity: 0.7;
+  text-align: center;
+  width:100%;
+}
+@media (max-width:520px) {
+  .topRow {flex-direction: column; gap: 10px}
+  .imageWrap {width:100%; height:120px}
+}

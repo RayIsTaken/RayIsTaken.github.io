@@ -7,10 +7,13 @@ let score = 0;
 
 let tries = localStorage.getItem("quizTries");
 
-if (!tries) {
+if (!tries) 
+{
     tries = 0;
     localStorage.setItem("quizTries", tries);
-} else {
+} 
+else
+{
     tries = parseInt(tries, 10);
 }
 
