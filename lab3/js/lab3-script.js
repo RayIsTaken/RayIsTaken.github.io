@@ -40,7 +40,6 @@ function shuffleQ1Choices()
         document.querySelector("#q1ChoicesDiv").append(labelElement);
         console.log(radioElement);
     }
-    
 }
 
 shuffleQ1Choices();

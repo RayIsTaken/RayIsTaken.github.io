@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/lab4-properties.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="js/lab4-scripts.js" defer></script>
     <title>Lab 4: Sign up Form </title>
 </head>
 
@@ -12,30 +15,55 @@
     <h1> Sign Up Form </h1>
 
     <fieldset>
-        <legend>Sign Up</legend>
-        First Name: <input type="text"><br>
-        Last Name: <input type="text"><br>
-        Email: <input type="text"><br>
-        Phone Number:<input type="text"><br><br>
-        Zip Code: <input id="zipCode" type="text"><br>
+        First Name: <input type="text">
+        <br>
+        
+        Last Name: <input type="text">
+        <br>
+        
+        Email: <input type="text">
+        <br>
+        
+        Phone Number: <input type="text">
+        <br>
+        <br>
+        
+        Zip Code: <input id="zipCode" type="text">
+        <span id="stateError"></span>
+        <br>
+        
         City: <span id="city"></span>
         <br>
+        
         Latitude: <span id="latitude"></span>
         <br>
+        
         Longitude: <span id="longitude"></span>
         <br><br>
-        State: <select id="state"></select><br>
-        Select a County: <select id="county"></select><br>
+        
+        State: <select id="state"></select>
+        <br>
+        
+        Select a County: <select id="county"></select>
+        <br>
 
-        Desired Username: <input type="text"><br>
-        Password: <input id="passwordClick" type="password"><span id="suggestPassword"></span>
+        Desired Username: <input type="text" id="usernameText">
+        <span id="usernameAvailabilityText"></span>
+        <br>
+        
+        Password: <input type="password" id="passwordClick">
+        <span id="suggestPassword"></span>
         <br> 
-        Type Password Again: <input type="password"><br>
-        <input type="submit" value="Sign up!">
+        
+        Type Password Again: <input type="password" id="passwordConfirm">
+        <br>
+        <br>
+
+            <div id="submitStyle">
+                <input type="submit" id="submitButton" value="Sign up!">
+                <span id="submitConfirmation"></span>
+            </div>
     </fieldset>
-
-    <script src="js/lab4-scripts.js"></script>
-
 </body>
 
 </html>
